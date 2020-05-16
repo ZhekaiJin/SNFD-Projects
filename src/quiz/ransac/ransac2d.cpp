@@ -64,8 +64,6 @@ pcl::visualization::PCLVisualizer::Ptr initScene()
 std::unordered_set<int> Ransac(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, int maxIterations, float distanceTol)
 {
     auto startTime = std::chrono::steady_clock::now();
-    std::unordered_set<int> inliersResult;
-	srand(time(NULL));
 	
 	// TODO: Fill in this function
 
@@ -77,6 +75,9 @@ std::unordered_set<int> Ransac(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, int ma
 	// If distance is smaller than threshold count it as inlier
 
 	// Return indicies of inliers from fitted line with most inliers
+
+    std::unordered_set<int> inliersResult;
+    srand(time(NULL));
 	while (maxIterations--) {
 		std::unordered_set<int> inliers;
 		while (inliers.size() < 3) {
