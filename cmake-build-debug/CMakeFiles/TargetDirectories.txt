@@ -1,3 +1,0 @@
-/home/cckai/Documents/SFND_Lidar_Obstacle_Detection/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/cckai/Documents/SFND_Lidar_Obstacle_Detection/cmake-build-debug/CMakeFiles/environment.dir
-/home/cckai/Documents/SFND_Lidar_Obstacle_Detection/cmake-build-debug/CMakeFiles/edit_cache.dir
